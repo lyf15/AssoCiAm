@@ -23,7 +23,7 @@ def eval_model(res_file, gt_file, C, sav):
     # Load ground-truth 
     with open(gt_file, 'r', encoding='utf-8') as file:
         gt = json.load(file)
-    
+    # Evaluation
     for model_name, ans_list in res.items():
         sum = 0
         for q_id, ans in ans_list.items():
