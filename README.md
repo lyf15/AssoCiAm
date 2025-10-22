@@ -92,7 +92,7 @@ After execution, `scorer.py` automatically generates the following output files:
 
 **Output files produced by `scorer.py`:**
 
-`./results/10T1subtask/model1.json` — model predictions
+`./results/10T1subtask/model1.json` (model predictions)
 
 ```json
 {
@@ -104,7 +104,7 @@ After execution, `scorer.py` automatically generates the following output files:
 }
 ```
 
-`./scores/10T1subtask/model1.json` — evaluation scores
+`./scores/10T1subtask/model1.json` (evaluation scores)
 
 ```json
 {
