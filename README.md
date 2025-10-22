@@ -108,7 +108,7 @@ After execution, `scorer.py` automatically generates the following output files:
 
 ```json
 {
-    "model1": xxxx
+    "model1": 10.00
 }
 ```
 
