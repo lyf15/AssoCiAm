@@ -108,9 +108,29 @@ After execution, `scorer.py` automatically generates the following output files:
 
 ```json
 {
-    "model1": 10.00
+    "model1": xxxx
 }
 ```
+
+**Additional Usage: Evaluate Existing Results (`-y1`)**
+
+If you have already generated the model prediction files in `./results/mT1subtask`, you can directly evaluate them **without re-running the model** by using the `-y1` flag.
+
+**Command:**
+
+```
+python scorer.py -s SUBTASK_ID -f FILENAME -y1
+```
+
+**Example:**
+
+```
+python scorer.py -s 10 -f model1 -m model1 -y1
+```
+
+This command will load the existing results from `./results/10T1subtask/model1.json`, compare them with the ground truth, and save the evaluation scores to `./scores/10T1subtask/model1.json`.
+
+> **Note:** Be careful not to reuse an existing filename (e.g., `model1`), as the new results or scores will **overwrite** files with the same name.
 
 ## Results
 
